@@ -40,6 +40,14 @@ Open the API on http://localhost:3000/customers
 
 Use postman or similar to create request to test the API
 
+## CRUD actions
+- **create**: POST localhost:3000/customers
+- **findAll**: GET localhost:3000/customers
+- **findOne**: GET localhost:3000/customers/:id
+- **update**: PUT localhost:3000/customers/:id
+- **delete**: DELETE localhost:3000/customers/:id
+- **deleteAll**: DELETE localhost:3000/customers
+
 ## create
 post to localhost:3000/customers
 ```bash
