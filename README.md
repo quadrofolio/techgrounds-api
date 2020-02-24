@@ -72,6 +72,17 @@ put to localhost:3000/:id
 ## delete:
 delete to localhost:3000/:id
 
+# Further reading:
+- https://www.npmjs.com/package/mysql
+- https://www.npmjs.com/package/http-errors
+- https://www.npmjs.com/package/compression
+- https://www.npmjs.com/package/morgan
+- https://www.npmjs.com/package/nodemon
+- https://www.npmjs.com/package/cors
+- https://time2hack.com/creating-rest-api-in-node-js-with-express-and-mysql/
+- https://bezkoder.com/node-js-rest-api-express-mysql/
+
+
 
 
 

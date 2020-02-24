@@ -15,11 +15,12 @@ app.use(compression());
 // setup logger to stdOut
 app.use(logger('dev'));
 
-// parse requests of content-type - application/json
-app.use(bodyParser.json());
+
 
 // parse requests of content-type - application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: true }));
+// parse requests of content-type - application/json
+app.use(bodyParser.json());
 
 // simple route
 app.get("/", (req, res) => {
