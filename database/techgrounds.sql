@@ -25,7 +25,7 @@ LOCK TABLES `customers` WRITE;
 INSERT INTO `customers` (`id`, `email`, `name`, `active`)
 VALUES
 	(2,'joost@pxlwidgets.com','Joost Klaver',1),
-	(3,'guido.garucci@pxlwidgets.com','Guido Garucci',1);
+	(3,'guido.carucci@pxlwidgets.com','Guido Garucci',1);
 
 /*!40000 ALTER TABLE `customers` ENABLE KEYS */;
 UNLOCK TABLES;
