@@ -1,15 +1,15 @@
 # Node.js Rest APIs with Express & MySQL example
 
 Create MySQL database: techgrounds
+Then import the /database/techgrounds.sql file
 
-Create table customer:
-```bash
-CREATE TABLE IF NOT EXISTS `customers` (
-  id int(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
-  email varchar(255) NOT NULL,
-  name varchar(255) NOT NULL,
-  active BOOLEAN DEFAULT false
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+- Install mysql on Windows: https://dev.mysql.com/doc/refman/8.0/en/windows-installation.html
+- Install mysql on Mac: https://dev.mysql.com/doc/mysql-osx-excerpt/5.7/en/osx-installation-pkg.html
+- Install mysql on Linux: https://dev.mysql.com/doc/refman/8.0/en/linux-installation.html
+
+Now you just need a tool to interact with your database:
+- All platforms: https://dbeaver.io/
+
 ```
 Change the config/db.config.js to use your mysql login credentials.
 
@@ -72,7 +72,13 @@ put to localhost:3000/:id
 ## delete:
 delete to localhost:3000/:id
 
-# Further reading:
+## Further reading:
+- See the docs directory for:
+  - Express _ Introduction
+  - Express _ Get methods and Route parameters
+  - AJAX _ Axios GET request
+
+## Readup on the packages used in this repository:
 - https://www.npmjs.com/package/mysql
 - https://www.npmjs.com/package/http-errors
 - https://www.npmjs.com/package/compression
