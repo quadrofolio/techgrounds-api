@@ -10,10 +10,11 @@ Then import the /database/techgrounds.sql file
 Now you just need a tool to interact with your database:
 - All platforms: https://dbeaver.io/
 
-```
+## In your code:
 Change the config/db.config.js to use your mysql login credentials.
 
-## Features:
+
+# Express API Features:
 - **cors** to be able to use xmlhttprequests(ajax) from another domain/server
 - uses gzip **compression** for faster/smaller server responses
 - **CRUD** actions (create, read, update, delete) on customer model
@@ -38,7 +39,7 @@ npm run start:dev
 # Test API
 Open the API on http://localhost:3000/customers
 
-Use postman or similar to create request to test the API
+Use [postman](https://www.postman.com/) or CURL to create request to test the API
 
 ## CRUD actions
 - **create**: POST localhost:3000/customers
@@ -48,7 +49,7 @@ Use postman or similar to create request to test the API
 - **delete**: DELETE localhost:3000/customers/:id
 - **deleteAll**: DELETE localhost:3000/customers
 
-## create
+## POST
 post to localhost:3000/customers
 ```bash
 {
@@ -58,10 +59,10 @@ post to localhost:3000/customers
 }
 ```
 
-## read
+## GET
 get to localhost:3000/customers
 
-## update:
+## UPDATE
 put to localhost:3000/:id
 ```bash
 {
@@ -69,7 +70,7 @@ put to localhost:3000/:id
 }
 ```
 
-## delete:
+## DELETE
 delete to localhost:3000/:id
 
 ## Further reading:
